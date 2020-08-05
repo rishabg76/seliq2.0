@@ -1,0 +1,239 @@
+:root{
+    --pcolor:hsla(350,70%,50%,1);
+    --pcolordark:hsla(350,70%,35%,1);
+    --pcolordarker:hsla(350,70%,30%,1);
+    --scolor:hsla(43,90%,50%,1);
+    --success_color:rgb(0,255,0,1);
+    --button_font_size:0.9em;
+}
+ 
+
+/*Resetting*/
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+*{ 
+    box-sizing: border-box;
+}
+
+                    /*Global*/
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+body,p{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*navigation bar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: var(--pcolor);
+    height: 50px;
+    width: 100%;
+    z-index: 999;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 136.42px;
+    background-color: var(--pcolor);
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+
+#toggler{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--pcolor);
+    border: 0px;
+}
+#toggler:focus{
+    outline: 0px;
+}
+
+.smbar{
+    margin: 3px;
+    height: 3px;
+    width: 30px;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,1);
+}
+
+#toggler:hover > .smbar{
+    background-color: rgba(255,255,255,0.8);
+}
+
+.navbar ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+#links{
+    overflow: hidden;
+    height: 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--pcolor);
+    transition: height 300ms;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+}
+
+.navbar ul li{
+    padding: 0px;
+    margin: 0px;
+    display:inline-block;
+}
+
+#links .nav_item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 10px;
+    height: 50px;
+    border-bottom: 1px solid var(--pcolordark);
+    transition: padding 100ms; 
+}
+
+#links .nav_item:hover{
+    background-color: var(--pcolordark);
+    padding: 0px 16px; 
+}
+
+/*footer*/
+
+.page_footer{
+    position: relative;
+    display: flex;
+    font-size: 0.8em;
+    color:#fff;
+    height: 250px;
+    font-family: Roboto,sans-serif;
+    width:100%;
+    flex-wrap: wrap;
+    background-color: #000;
+    box-sizing: border-box;
+}
+.wrap_one{
+    display: flex;
+    Width:50%;
+    height: 200px;
+    align-items: center;
+    padding: 20px;
+    border-right:  1px solid rgba(255,255,255,0.1);
+    flex-direction: column;
+}
+.wrap_two{
+
+    display: flex;
+    Width:50%;
+    height: 200px;
+    
+    -webkit-box-align: center;
+    
+    -ms-flex-align: center;
+    
+    align-items: center;
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.page_footer ul{
+    list-style-type: none;
+    margin: 5px;
+    padding: 0px 8px;
+    font-weight: 200;
+}
+.wrap_three{
+    display: flex;
+    width:100%;
+    height: 50px;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    align-items: center;
+    justify-content: center;
+}
+.fcaption{
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.fcaption a{
+    color: #fff;
+    text-decoration: none;
+}
+.fcaption a:hover{
+    color: var(--pcolor);
+}
+
+.fcaption ul{
+    padding: 0px;
+    padding-left: 3px;
+    margin:0px;
+    margin-top: 5px;
+}
+.fcaption ul li{
+    padding: 3px 0px;
+    margin: 0px;
+}
+
+.f_row{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*Icon*/
+
+.s_icon_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    height: 15px;
+    width: 15px;
+    margin: 0px 5px;
+/*    border-radius: 50%;*/
+}
+.s_icon{
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (min-width: 992px) {
+}
+
+

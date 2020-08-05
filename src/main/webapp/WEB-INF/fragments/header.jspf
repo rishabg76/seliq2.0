@@ -1,0 +1,68 @@
+<%@ page pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="/new/css/body.css">
+
+<script type="text/javascript" src="/new/JS/availability.js"></script>
+<script type="text/javascript" src="/new/JS/nav.js"></script>
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins
+&family=Lobster
+&family=Staatliches
+&family=Open+Sans:wght@400;600
+&family=Roboto  
+&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<nav class="navbar">
+		<a class="logo" href="/new/fc?page=login&type=view"> <img
+			src="/new/Images/logo.png"> <!-- height="50%" width="50%" alt="logo"> -->
+		</a>
+		<button onclick="toggle()" type="button" id="toggler">
+			<div class="smbar"></div>
+			<div class="smbar"></div>
+			<div class="smbar"></div>
+		</button>
+		<ul id="links">
+			<%
+					String email = (String) session.getAttribute("email");
+				%>
+			<li><a class="nav_item" href="/new/fc?type=view&page=additem">Post
+					Free Ad</a></li>
+					<%request.setAttribute("email", email); %>
+			<%
+					if (email == null) {
+				%>
+			<li><a class="nav_item"
+				href="/new/fc?type=view&page=loginpage">LOGIN</a></li>
+			<li><a href="/new/fc?type=view&page=signup" class="nav_item"> SIGNUP </a></li>
+			<%
+					} else {
+				%>
+			
+			<!-- <li><a class="nav_item" href="#" id="navbarDropdown"
+				role="button" data-toggle="dropdown" aria-haspopup="true"
+				aria-expanded="false"> <%=email%>
+			</a>
+				<div class="dropdown-menu dropdown-menu-right"
+					aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="/new/fc/ab?type=view&page=profile">My
+						Account</a> <a class="dropdown-item"
+						href="/new/fc/?page=Logout&type=model">Log Out</a>
+				</div>
+			</li>-->
+			<li><a class="nav_item"
+				href="/new/fc?type=view&page=profile">My Account</a></li>
+			<li><a href="/new/fc?page=Logout&type=model" class="nav_item">Log Out</a></li>
+			<%
+					}
+				%>
+		</ul>
+	</nav>
+	
+</body>
+</html>

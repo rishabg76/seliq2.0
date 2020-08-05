@@ -1,0 +1,52 @@
+<%@ page pageEncoding="UTF-8"%>
+<footer class="page_footer">
+
+	<div class="wrap_one">
+
+		<div class="fcaption">
+			<a href="about.html">About Seliq</a>
+		</div>
+
+		<div class="fcaption">
+			<a href="support.html">Support Us</a>
+		</div>
+
+		<div class="fcaption">
+			<a href="privacy.html">Privacy</a>
+		</div>
+
+	</div>
+
+	<div class="wrap_two">
+
+		<div class="fcaption">
+			Contact
+			<ul>
+				<li class="f_row"><span class="s_icon_container"> <img
+						class="s_icon" src="/new/Icons/call.svg">
+				</span> +98-7269089026</li>
+				<li class="f_row"><span class="s_icon_container"> <img
+						class="s_icon" src="/new/Icons/email.svg">
+				</span> seliqlko@gmail.com</li>
+			</ul>
+		</div>
+		<div class="fcaption">
+			Stay Connected
+			<ul>
+				<li class="f_row"><span class="s_icon_container"> <img
+						class="s_icon" src="/new/Icons/link.svg">
+				</span> <a href="http://www.facebook.com/Seliq"> Facebook</a></li>
+				<li class="f_row"><span class="s_icon_container"> <img
+						class="s_icon" src="/new/Icons/link.svg">
+				</span> <a href="http://www.instagram.com/Seliq">Instagram</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="wrap_three">
+
+		<div class="block">@2019 Dasauli , Lucknow , 226026</div>
+
+	</div>
+
+</footer>
